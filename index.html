@@ -58,6 +58,9 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            cursor: pointer;
+            border: none;
+            outline: none;
         }
 
         .left-column .btn {
@@ -188,8 +191,27 @@
         <div class="button-column right-column">
             <a href="contact/" class="btn">Адольф</a>
             <a href="portfolio/" class="btn">Висарионович</a>
-            <a href="gallery/" class="btn">Галий</a>
+            <button id="protectedBtn" class="btn">Секрет</button>
         </div>
     </div>
+
+    <script>
+        document.getElementById('protectedBtn').addEventListener('click', function() {
+            // Запрашиваем пароль у пользователя
+            const password = prompt('Введите пароль для доступа:');
+            
+            // Правильный пароль (замените на свой)
+            const correctPassword = "secret123";
+            
+            // Проверяем пароль
+            if (password === correctPassword) {
+                // Перенаправляем на защищенную страницу
+                window.location.href = "https://example.com/secret-page.html";
+            } else if (password !== null) {
+                // Если пароль неверный (и пользователь не нажал "Отмена")
+                alert('Неверный пароль! Доступ запрещен.');
+            }
+        });
+    </script>
 </body>
 </html>
