@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши Услуги</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap">
+    <style>
+        :root {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        .back-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.3);
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 30px;
+            text-decoration: none;
+            color: #2d3748;
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: rgba(255,255,255,0.5);
+            transform: translateX(-5px);
+        }
+        
+        .service-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        
+        .service-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .service-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+        
+        .service-card {
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h2 {
+            color: #5a67d8;
+            margin-top: 0;
+        }
+        
+        .service-card p {
+            line-height: 1.8;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #e53e3e;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .service-header h1 {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<!-- Контент без тега body -->
+<a href="../" class="back-btn">← На главную</a>
+
+<div class="service-container">
+    <div class="service-header">
+        <h1>Наши Услуги</h1>
+        <p>Профессиональные решения для вашего бизнеса</p>
+    </div>
+    
+    <div class="service-card">
+        <h2>Веб-разработка</h2>
+        <p>Создание современных веб-приложений с использованием React, Vue и Node.js</p>
+        <p class="price">От 50 000 ₽</p>
+    </div>
+    
+    <div class="service-card">
+        <h2>Мобильные приложения</h2>
+        <p>Разработка кроссплатформенных приложений на Flutter и React Native</p>
+        <p class="price">От 80 000 ₽</p>
+    </div>
+    
+    <div class="service-card">
+        <h2>Дизайн интерфейсов</h2>
+        <p>Создание UI/UX дизайна с прототипированием в Figma</p>
+        <p class="price">От 30 000 ₽</p>
+    </div>
+</div>
+
+<!-- Закрывающие теги -->
+  </html>
